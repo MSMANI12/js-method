@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>js methods</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="free web tutorial">
+   <meta name="viewport" content="width=device-width,initial-scale=0.1">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+   <style>
+    td b{
+	 color:blue;
+	 }
+   </style>
+  </head>
+  <body>
+        <table  border="1">
+        <caption>ARRAY OF METHODS</caption>
+        <tr>
+            <th>S.NO</th>
+            <th>method</th>
+            <th>Syntax</th>
+            <th> i/p</th>
+            <th>O/P</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+           
+       
+       
+        <tr>
+            <td>1.</td>
+            <td><b>push()</b></td>
+            <td>array.push(any element);</td>
+            <td>
+               let arr = [10,20];
+            </td>
+            <td>
+                
+                arr2.<b>push</b>(40);
+                console.log(arr2);
+                <br><b>[10,20,40]</b>
+            </td>
+            <td>push method to add element at the end of the array</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td><b>pop()</b></td>
+            <td>array.pop();</td>
+            <td>
+                let marks = [10,20,40];
+            </td>
+            <td>
+                let marks = [10,20,40];
+                marks.<b>pop</b>();
+                console.log(marks);
+                <br><h2>[10,20]</h2>
+            </td>
+            <td>pop method to Remove the last element of the array</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td><b>shift()</b></td>
+            <td>array.shift();</td>
+            <td>
+                let marks = [10,20,30,40];
+            </td>
+            <td>
+                let marks = [10,20,30,40];
+                marks.<b>shift</b>();
+                console.log(marks);
+                <br>
+				<h2>[20,30,40]</h2>
+            </td>
+            <td>shift method to Remove the first element of the array</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td><b>unshift()</b></td>
+            <td>array.unshift(any element);</td>
+            <td>
+                let arr = [10,20,30,40];
+            </td>
+            <td>
+                
+                arr.<b>unshift</b>(-10,0);
+                console.log(arr3);
+                <br><h2>[-10,0,10,20,30,40]</h2>
+            </td>
+            <td>unshift method to Add the first element of the array</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td><b>reduce()</b></td>
+            <td>array.reduce(function(accumulate,currValue,<br>curIndex,array),initialvalue);</td>
+            <td>
+            const numbers = [1, 2, 3, 4, 5];
+            </td>
+            <td>
+                const numbers = [1, 2, 3, 4, 5];
+                const sum = numbers.<b>reduce</b>(function (accumulator, currentValue) {
+                    return accumulator + currentValue * 2;
+                }, 10);
+                console.log(sum); 
+                <br><h2>40</h2>
+            </td>
+            <td> The reduce() method returns a single value 
+			<br>important argument to insert accumulator and currentvalue</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td><b>reverse()</b></td>
+            <td>array.reverse();</td>
+            <td>
+               let arrayValues = [10,20,30,40];
+            </td>
+            <td>
+                let arrayValues = [10,20,30,40];
+                console.log(arrayValues.<b>reverse</b>());
+                <br><h2>[40,30,20,10]</h2>
+            </td>
+            <td>reverse method to Returns the array index values in reverse order.</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td><b>slice()</b></td>
+            <td>array.slice(startIndex,endIndex);</td>
+            <td>
+            let array =[10,20,30,40];
+            </td>
+            <td>
+                let array =[10,20,30,40];
+                let result=array.<b>slice</b>(1,-2);
+                console.log(result);
+                <br><h2>[20]</h2>
+            </td>
+            <td>slice method to Return the array element slice the index value
+			(1,-2)1 is remove the 10 and -2 is remove back two position 40,30</td>
+        </tr>
+       
+         <tr>
+            <td>8.</td>
+            <td><b>map()</b></td>
+            <td>array.map(function(value,index,array)){[thisArgument]};</td>
+            <td>
+                
+                let numbers = [64, 49, 81];
+				let results = numbers.map(Math.sqrt);
+				console.log(results);
+            </td>
+            <td>
+                console.log(result)';
+				
+				<h2>[8,7,9]</h2>
+         
+           
+           
+            <td> new array of value return the map method</td>
+        </tr>
+		<tr background-color="gray">>
+         <td>9.</td>
+            <td><b>filter()</b></td>
+            <td>array.filter(callback(element,index,arr),thisValue);</td>
+            <td>
+                
+                    const employees = [
+                    'David Carlson', age: 30 
+                     'John Cena', age: 34 
+                    'Mike Sheridan', age: 25 ,'John Carte', age: 50 
+                ];
+            </td>
+            <td>
+                
+                let result = employees.<b>filter</b>(function (val) {
+                   <br> return val.age >= 31;
+               <br> });
+                console.log(result);
+                <br><h2>[ 'John Cena', age: 34 ,  'John Carte', age: 50 ]</h2></td>
+            <td>Returns array values by filtering elements</td>
+        </tr>
+		
+		 <td>10.</td>
+            <td><b>concat()</b></td>
+            <td> const children = arr1.concat(arr2);</td>
+            <td>
+                
+                  const arr1 = ["Cecilie", "Lone"];
+                  const arr2 = ["Emil", "Tobias", "Linus"];
+                  const children = arr1.<b>concat</b>(arr2);
+
+Join
+            </td>
+            <td>
+			 const children = arr1.<b>concat</b>(arr2);
+                
+               [Cecilie,Lone,Emil,Tobias,Linus]</td>
+            <td>Returns arr1 and arr2 to join
+			  <br>similar push method</td>
+        </tr>
+		
+		            <td>11.</td>
+            <td>find()</td>
+            <td>array.find(function(value,index,array),thisValue);</td>
+            <td>let numbers = [1, 2, 3, 4, 5];
+				console.log(numbers.find(e => e % 2 == 0));
+              </td>
+            <td>
+                
+            <br>OUTPUT=><b>2</b></td>
+            <td>Returns first element of array that satisfies a condition</td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>findIndex()</td>
+            <td>array.findIndex(function(value,index,array)<br>,thisValue);</td>
+            <td>
+                let ranks = [1, 5, 7, 8, 10, 7];
+				let index = ranks.findIndex(rank => rank === 7);
+				console.log(index);
+            </td>
+            
+            <td>OUTPUT=><b>2 </b></td>
+            <td>The findIndex() method returns the index (position) of the first element that passes a test.</td>
+        </tr>
+        <tr>
+		
+		<td>13.</td>
+            <td>indexOf()</td>
+            <td>array.indexOf(searchElement,fromIndex);</td>
+            <td>
+                const str = "Brave new world";
+				console.log(str.indexOf("w")); 
+            </td>
+            <td><br>OUTPUT=><b>8</b></td>
+            <td>Returns the first index of element</td>
+        </tr>
+		
+		
+            <td>14.</td>
+            <td>splice()</td>
+            <td>1.array.splice(startIndex,endIndex);<br>
+                2.array.splice(startIndex,deletecount);<br>
+                3.array.splice(startIndex,,deletecount,endIndex);<br>
+            </td>
+            <td>
+               let months = ["January", "February", "Monday", "Tuesday"];
+              let days = months.splice(2);
+              console.log(days); 
+            </td>
+            <td>
+                <br>OUTPUT=><b>["Monday", "Tuesday"]</b>
+            </td>
+            <td>To add or remove elements from an array-splice</td>
+        </tr>
+		
+		
+            <td>15.</td>
+            <td>toString()</td>
+            <td>array.toString();</td>
+            <td>const arr = [1, 2, 3];
+                 arr.toString();</td>
+            <td>
+                <br>OUTPUT=><b>"1,2,3"</b>
+            </td>
+            <td>Returns the values as string</td>
+        </tr>
+      
+		
+		
+		
+		  <tr>
+            <td>16.</td>
+            <td>toLocaleString()</td>
+            <td>array.toLocaleString(locals,option);</td>
+            <td>var totn_number = 123456.789;
+               console.log(totn_number.toLocaleString());</td>
+            <td>
+                <br>OUTPUT=><b>123,456.789</b>
+            </td>
+            <td>Returns date as a string</td>
+			</tr>
+			
+			
+			
+			<tr>
+			 <td>17.</td>
+            <td>findLastIndex()</td>
+            <td>string.lastIndexOf(searchvalue, start)</td>
+            <td>
+                1.value=>the current element in the array<br>
+                2.index=>the index of the current element<br>
+                3.array=> the array findLastIndex() was called<br>
+                4.thisArgument=>A value to use as this when executing callbackfunction<br>
+                INPUT=>let arr1 = [1,2,3,4,4,5,6];
+				let res1 = arr1.lastIndexOf(6);
+            </td>
+            <td><br>OUTPUT=><b>6</b></td>
+            <td>last value in the array display</td>
+        </tr>
+
+
+
+  
+  
+  
+  
+  </body>
+  </html>
